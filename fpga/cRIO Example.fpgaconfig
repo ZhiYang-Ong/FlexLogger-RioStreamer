@@ -1,0 +1,112 @@
+<?xml version='1.0' standalone='yes' ?>
+<?xml-stylesheet type="text/xsl" href='NI VeriStand FPGA DMA.xsl'?>
+<FPGADMAChannelData xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation = "NI VeriStand FPGA DMA.xsd">
+    <Version>2.0</Version>
+    <Bitfile>cRIO Example.lvbitx</Bitfile>
+	<Categories>
+		<Category>
+			<Name>Input</Name>
+			<Category>
+				<Name>AI</Name>
+			</Category>
+		<Category>
+			<Name>PWM In</Name>
+		</Category>
+		<Category>
+			<Name>DI</Name>
+		</Category>
+		</Category>
+    </Categories>
+    <DMA_Read>
+        <Packets>5</Packets>
+        <Packet/><!--Packet for Late Status bit -->
+        <Packet>
+			<PWM>
+				<Name>PWM In 0 (DIO1)</Name>
+				<Description></Description>
+				<Category>Input\PWM In</Category>
+				<InitialValue>0.000000</InitialValue>
+				<Scale>100.000000</Scale>
+				<Offset>0.000000</Offset>
+				<Unit></Unit>
+				<Symbol>PWM In</Symbol>
+				<Parameters>
+					<U32>
+						<Name>Timeout</Name>
+						<ControlName>PulseMeas 0 Timeout</ControlName>
+						<InitialValue>10</InitialValue>
+						<Scale>107374.182375</Scale>
+						<Offset>0.000000</Offset>
+					</U32>
+				</Parameters>
+			</PWM>
+        </Packet>
+        <Packet>
+			<FXPI32>
+				<Name>AI2</Name>
+				<Description></Description>
+				<Category>Input\AI</Category>
+				<InitialValue>0.000000</InitialValue>
+				<Scale>1.000000</Scale>
+				<Offset>0.000000</Offset>
+				<Unit></Unit>
+				<Symbol>AI</Symbol>
+				<FXPWL>27</FXPWL>
+				<FXPIWL>5</FXPIWL>
+			</FXPI32>
+			<FXPI32>
+				<Name>AI3</Name>
+				<Description></Description>
+				<Category>Input\AI</Category>
+				<InitialValue>0.000000</InitialValue>
+				<Scale>1.000000</Scale>
+				<Offset>0.000000</Offset>
+				<Unit></Unit>
+				<Symbol>AI</Symbol>
+				<FXPWL>27</FXPWL>
+				<FXPIWL>5</FXPIWL>
+			</FXPI32>
+        </Packet>
+        <Packet>
+			<FXPI32>
+				<Name>AI0</Name>
+				<Description></Description>
+				<Category>Input\AI</Category>
+				<InitialValue>0.000000</InitialValue>
+				<Scale>1.000000</Scale>
+				<Offset>0.000000</Offset>
+				<Unit></Unit>
+				<Symbol>AI</Symbol>
+				<FXPWL>27</FXPWL>
+				<FXPIWL>5</FXPIWL>
+			</FXPI32>
+			<FXPI32>
+				<Name>AI1</Name>
+				<Description></Description>
+				<Category>Input\AI</Category>
+				<InitialValue>0.000000</InitialValue>
+				<Scale>1.000000</Scale>
+				<Offset>0.000000</Offset>
+				<Unit></Unit>
+				<Symbol>AI</Symbol>
+				<FXPWL>27</FXPWL>
+				<FXPIWL>5</FXPIWL>
+			</FXPI32>
+        </Packet>
+        <Packet>
+			<Boolean>
+				<Name>DIO0</Name>
+				<Description></Description>
+				<Category>Input\DI</Category>
+				<InitialValue>0.000000</InitialValue>
+				<Scale>1.000000</Scale>
+				<Offset>0.000000</Offset>
+				<Unit></Unit>
+				<Symbol>DI</Symbol>
+			</Boolean>
+        </Packet>
+    </DMA_Read>    
+    <DMA_Write>
+        <Packets>0</Packets>
+    </DMA_Write>
+</FPGADMAChannelData>
